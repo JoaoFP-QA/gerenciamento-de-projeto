@@ -54,6 +54,28 @@
       },
       "cost": 0,
       "services": []
+    },
+    {
+      "id": "71b3",
+      "name": "teste8",
+      "budget": "300",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "0d50",
+      "name": "teste",
+      "budget": "10000",
+      "category": {
+        "id": "1",
+        "name": "Infra"
+      },
+      "cost": 0,
+      "services": []
     }
   ],
   "categories": [
