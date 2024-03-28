@@ -11,6 +11,7 @@ function Project() {
     const {id} = useParams()
     const [ project, setProject] = useState ([])
     const [showProjectForm, setShowProjectForm] = useState(false)
+    const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState()
     const [type, setType] = useState()
 
@@ -20,7 +21,7 @@ function Project() {
             fetch(`http://localhost:5000/projects/${id}`,{
             method: 'GET',
             headers: {
-                'content-Type': 'application/json',
+                'Content-Type': 'application/json',
             },
         })
         .then((resp) => resp.json())
@@ -32,6 +33,7 @@ function Project() {
     }, [id])
 
     function editPost(project) {
+        setMessage('')
         // budget validation
         if(project.budget < project.cost) {
             setMessage('O orçamento não pode ser menor que o custo do projeto')
@@ -46,7 +48,7 @@ function Project() {
             },
             body: JSON.stringify(project),
         })
-        .then(resp => resp.json())
+        .then((resp) => resp.json())
         .then((data) => {
 
             setProject(data)
@@ -61,6 +63,11 @@ function Project() {
 
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
+
+    }
+
+    function toggleServiceForm() {
+        setShowServiceForm(!showServiceForm)
 
     }
 
@@ -93,6 +100,19 @@ function Project() {
                         </div>
                     )}
                 </div>
+                <div className={styles.service_form_container}>
+                    <h2>Adicione um serviço:</h2>
+                    <button className={styles.btn} onClick={toggleServiceForm}>
+                        {! showServiceForm ? 'Adicionar serviço' : 'Fechar'}
+                    </button>
+                    <div className={styles.project_info}>
+                        {showServiceForm && <div>Formulário do serviço</div>}
+                    </div>
+                </div>
+                <h2>Serviços</h2>
+                <Container customClass="start">
+                    <p>Itens de serviços</p>
+                </Container>
             </Container>
         </div>
         

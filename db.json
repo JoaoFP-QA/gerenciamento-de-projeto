@@ -1,24 +1,13 @@
 {
   "projects": [
     {
-      "id": "175c",
-      "name": "Atualizando o projeto",
-      "budget": "1000",
+      "id": "c3aa",
       "category": {
         "id": "3",
         "name": "Design"
       },
-      "cost": 0,
-      "services": []
-    },
-    {
-      "id": "054c",
-      "name": "Cabeamento",
-      "budget": "5000",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
+      "name": "Projeto inicial",
+      "budget": "2000",
       "cost": 0,
       "services": []
     }
