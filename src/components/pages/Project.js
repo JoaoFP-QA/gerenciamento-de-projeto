@@ -64,15 +64,16 @@ function Project() {
     }
 
     function createService(project) {
+        setMessage('')
 
         
         // last service
         const lastService = project.services[project.services.length -1]
+        
 
         lastService.id = uuidv4()
 
         const lastServiceCost = lastService.cost
-
         const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
 
         // maximum value validation
@@ -96,6 +97,8 @@ function Project() {
         .then((resp) => resp.json())
         .then((data) => {
             //exibir os serviços
+            setMessage('Serviço adicionado com sucesso!')
+            setType('success')
         })
         .catch(err => console.log(err))
 

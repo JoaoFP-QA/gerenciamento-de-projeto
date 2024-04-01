@@ -1,27 +1,20 @@
 {
   "projects": [
     {
-      "id": "b700",
-      "name": "Projeto inicial",
-      "budget": "3000",
+      "id": "54cf",
+      "name": "Projeto de teste",
+      "budget": "2000",
       "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
+        "id": "1",
+        "name": "Infra"
       },
-      "cost": null,
+      "cost": 100,
       "services": [
         {
-          "name": "meu novo serviço",
+          "name": "serviço de infra",
+          "cost": "100",
           "description": "escreva aqui",
-          "id": "fc7f1b76-d856-44db-b1fe-7f74a53d944e"
-        },
-        {
-          "id": "0e9a79a1-138b-48ab-bc7e-a19e8b83e728"
-        },
-        {
-          "id": "10b24719-190c-40c3-8498-d9c0b19fb0e0",
-          "name": "teste",
-          "description": "escreva aqui"
+          "id": "241621b8-2480-45b3-9f4b-7a5b98eec382"
         }
       ]
     }
