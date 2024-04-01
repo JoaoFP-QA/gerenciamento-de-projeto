@@ -1,20 +1,26 @@
 {
   "projects": [
     {
-      "id": "54cf",
-      "name": "Projeto de teste",
-      "budget": "2000",
+      "id": "7924",
+      "name": "Instalação de cameras",
+      "budget": "6000",
       "category": {
         "id": "1",
         "name": "Infra"
       },
-      "cost": 100,
+      "cost": 400,
       "services": [
         {
-          "name": "serviço de infra",
+          "name": "canos para infra",
+          "cost": "300",
+          "description": "canos para infra ",
+          "id": "db3145a6-5e1d-491b-b389-16cf5b9750c0"
+        },
+        {
+          "name": "novo serviço",
           "cost": "100",
-          "description": "escreva aqui",
-          "id": "241621b8-2480-45b3-9f4b-7a5b98eec382"
+          "description": "serviços simples",
+          "id": "3d3f6f38-4f38-4087-93ad-0b0295fa4b65"
         }
       ]
     }
