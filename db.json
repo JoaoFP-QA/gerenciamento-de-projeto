@@ -1,15 +1,29 @@
 {
   "projects": [
     {
-      "id": "c3aa",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
+      "id": "b700",
       "name": "Projeto inicial",
-      "budget": "2000",
-      "cost": 0,
-      "services": []
+      "budget": "3000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": null,
+      "services": [
+        {
+          "name": "meu novo serviço",
+          "description": "escreva aqui",
+          "id": "fc7f1b76-d856-44db-b1fe-7f74a53d944e"
+        },
+        {
+          "id": "0e9a79a1-138b-48ab-bc7e-a19e8b83e728"
+        },
+        {
+          "id": "10b24719-190c-40c3-8498-d9c0b19fb0e0",
+          "name": "teste",
+          "description": "escreva aqui"
+        }
+      ]
     }
   ],
   "categories": [
