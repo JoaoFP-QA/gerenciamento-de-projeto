@@ -1,26 +1,26 @@
 {
   "projects": [
     {
-      "id": "7924",
-      "name": "Instalação de cameras",
-      "budget": "6000",
+      "id": "d263",
+      "name": "Portfolio",
+      "budget": "200",
       "category": {
         "id": "1",
         "name": "Infra"
       },
-      "cost": 400,
+      "cost": 40,
       "services": [
         {
-          "name": "canos para infra",
-          "cost": "300",
-          "description": "canos para infra ",
-          "id": "db3145a6-5e1d-491b-b389-16cf5b9750c0"
+          "name": "fios de cobres",
+          "cost": "10",
+          "description": "fios de 8mm",
+          "id": "4c4ec1cf-1d39-4027-8019-9fda636c3457"
         },
         {
-          "name": "novo serviço",
-          "cost": "100",
-          "description": "serviços simples",
-          "id": "3d3f6f38-4f38-4087-93ad-0b0295fa4b65"
+          "name": "fios de nylon",
+          "cost": "30",
+          "description": "fios de10mm",
+          "id": "7695973d-e93e-41f3-aeb2-29ab3bf27d72"
         }
       ]
     }
