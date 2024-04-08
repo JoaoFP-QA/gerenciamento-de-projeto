@@ -1,30 +1,5 @@
 {
-  "projects": [
-    {
-      "id": "d263",
-      "name": "Portfolio",
-      "budget": "200",
-      "category": {
-        "id": "1",
-        "name": "Infra"
-      },
-      "cost": 40,
-      "services": [
-        {
-          "name": "fios de cobres",
-          "cost": "10",
-          "description": "fios de 8mm",
-          "id": "4c4ec1cf-1d39-4027-8019-9fda636c3457"
-        },
-        {
-          "name": "fios de nylon",
-          "cost": "30",
-          "description": "fios de10mm",
-          "id": "7695973d-e93e-41f3-aeb2-29ab3bf27d72"
-        }
-      ]
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": "1",
