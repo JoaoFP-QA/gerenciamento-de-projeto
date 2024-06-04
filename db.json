@@ -1,5 +1,41 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "id": "8753",
+      "name": "Portfolio",
+      "budget": "5000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": []
+    },
+    {
+      "id": "821d",
+      "name": "Projeto inicial",
+      "budget": "3000",
+      "category": {
+        "id": "3",
+        "name": "Design"
+      },
+      "cost": 2500,
+      "services": [
+        {
+          "name": "Instalação de infra",
+          "cost": "1000",
+          "description": "Instalação de infra para câmeras de segurança.",
+          "id": "03feea2d-ece3-4daf-afcc-c8ce0a04b773"
+        },
+        {
+          "name": "Equipamentos para Infra",
+          "cost": "1500",
+          "description": "Compra de Equipamentos cabos, tubos, fios e conectores.",
+          "id": "4b6f059a-c80d-4461-8a8c-29e361b43980"
+        }
+      ]
+    }
+  ],
   "categories": [
     {
       "id": "1",
