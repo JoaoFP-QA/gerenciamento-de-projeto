@@ -9,12 +9,15 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
+    padding: 0;
+    gap: 1.5em;
 }
 .social_list li {
     margin: 0 1em;
 }
 .social_list li:hover {
     color: #5d9cfa;
+    transform: scale(1.2);
 }
 .social_list svg {
     font-size: 1.5em;
@@ -26,4 +29,9 @@
 .copy_right span {
     font-weight: bold;
     color: #5d9cfa;
+}
+@media(max-width: 500px){
+    .footer{
+        padding: 2em 1em;
+    }
 }

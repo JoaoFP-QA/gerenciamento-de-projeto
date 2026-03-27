@@ -1,18 +1,29 @@
 .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
+    padding: 0 16px;
+    gap: 1em;
 }
 
 .min-height {
-    min-height: 75%;
+    min-height: 75vh;
 }
 .start {
     justify-content: flex-start;
 }
 .column {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
 }

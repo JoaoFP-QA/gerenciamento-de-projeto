@@ -1,33 +1,37 @@
 .project_card {
+    flex: 1 1 300px;
+    max-width: 350px;
     padding: 1em;
     border: 1px solid #7a7a7a;
+    background-color: #fff;
     border-radius: 5px;
-    width: 24%;
-    margin: 0.5%;
+    transition: 0.3s;
 }
-
+.project_card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 .project_card h4 {
     background-color: #222;
     color: #5d9cfa;
     padding: 0.4em;
     margin-bottom: 1.3em;
-    font-size: 1.3em;
-
-}
-
-.project_card p {
-    color: #7a7a7a;
-    margin-bottom: 1em;
+    font-size: clamp(1em, 2vw, 1.3em);
 
 }
 
 .project_card p span {
     font-weight: bold;
+    color: #222;
+
 }
+
+
 
 .category_text {
     display: flex;
     align-items: center;
+    font-size: 0.9em;
 }
 .category_text span {
     display: block;
@@ -53,6 +57,8 @@
     margin-top: 1.2em;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
 }
 .project_card_actions a,
 .project_card_actions button {
@@ -68,7 +74,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    transition: 0.5s;
+    transition: 0.3s;
 
 }
 .project_card_actions svg {

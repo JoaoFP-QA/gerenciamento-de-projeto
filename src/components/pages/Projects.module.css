@@ -4,5 +4,8 @@
 .title_container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 2em;
+    flex-wrap: wrap;
+    gap: 1em;
 }
