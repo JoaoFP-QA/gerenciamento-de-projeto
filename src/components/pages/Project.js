@@ -1,4 +1,4 @@
-import { parse, v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid'
 import styles from './Project.module.css'
 
 import { useParams } from 'react-router-dom'
@@ -33,7 +33,7 @@ function Project() {
             setProject(data)
             setServices(data.services)
         })
-        .catch((err) => console.log)
+        .catch((err) => console.log(err))
         }, 300)
     }, [id])
 
