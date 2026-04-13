@@ -12,10 +12,10 @@ function NewProject() {
         project.cost = 0
         project.services = []
 
-        fetch('http://localhost:5000/projects', {
+        fetch(`${process.env.REACT_APP_API_URL}/projects`, {
             method: 'POST',
             headers: {
-                'content-Type': 'application/json',
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify(project),
         })
