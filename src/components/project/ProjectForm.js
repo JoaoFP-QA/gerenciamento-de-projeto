@@ -11,10 +11,13 @@ function ProjectForm({ handleSubmit, btnText, projectData}) {
   const [project, setProject] = useState(projectData || {})
 
   useEffect(() => {
+    console.log(`${process.env.REACT_APP_API_URL}/categories`)
+    
     fetch(`${process.env.REACT_APP_API_URL}/categories`, {
     method: 'GET',
     headers: {
       'content-type': 'application/json',
+      
     },
 
   })
