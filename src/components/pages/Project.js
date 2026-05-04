@@ -12,7 +12,7 @@ import ServiceCard from '../service/ServiceCard'
 
 function Project() {
     const {id} = useParams()
-    const [ project, setProject] = useState ([])
+    const [ project, setProject] = useState ([{}])
     const [services, setServices] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
     const [showServiceForm, setShowServiceForm] = useState(false)
@@ -31,7 +31,7 @@ function Project() {
         .then((resp) => resp.json())
         .then((data) => {
             setProject(data)
-            setServices(data.services)
+            setServices(Array.isArray(data.services) ? data.services : [])
         })
         .catch((err) => console.log(err))
         }, 300)

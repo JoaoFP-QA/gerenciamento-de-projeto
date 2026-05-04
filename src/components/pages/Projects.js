@@ -33,11 +33,15 @@ function Projects() {
             .then((resp) => resp.json())
             .then((data) => {
                 console.log(data)
-                setProjects(data)
+                setProjects(Array.isArray(data) ? data : [] )
                 setRemoveLoading(true)
                 
             })
-            .catch((err) => console.log(err))
+            .catch((err) => {
+                console.log(err)
+                setProjects([])
+                setRemoveLoading(true)
+             })
 
             }, 300
         )                   
@@ -50,14 +54,18 @@ function Projects() {
                 'Content-Type': 'application/json',
             },
         })
-        .then((resp) => resp.json())
+    
         .then(() => {
-            setProjects(projects.filter((project) => project.id !== id))
+            setProjects((prevProjects) =>
+                prevProjects.filter(
+                    (project) => String(project.id) !== String(id)
+                )
+            )
+
             setProjectMessage('Projeto removido com sucesso!')
         })
         .catch(err => console.log(err))
-        
-        }
+    }
     
 
     return (
@@ -70,24 +78,28 @@ function Projects() {
         {message &&<Message type="success" msg={message} />}
         {projectMessage &&<Message type="success" msg={projectMessage} />}
         <Container customClass="start">
-          {projects.length > 0 && 
+            {Array.isArray(projects) && projects.length > 0 &&
             projects.map((project) => (
-            <ProjectCard
-            id={project.id}
-            name={project.name}
-            budget={project.budget}
-            category={project.category.name}
-            key={project.id}
-            handleRemove={removeProject}
-            />
-        ))}
-        {!removeLoading && <Loading />}
-        { removeLoading && projects.length === 0 && (
-            <p>Não há projetos cadastrados!</p>
-        )}
 
-        </Container>
-    </div>
+            <ProjectCard
+                            id={project.id}
+                            name={project.name}
+                            budget={project.budget}
+                            category={project.category?.name}
+                            key={project.id}
+                            handleRemove={removeProject}
+                        />
+                    ))
+                }
+
+                {!removeLoading && <Loading />}
+
+                {removeLoading && projects.length === 0 && (
+                    <p>Não há projetos cadastrados!</p>
+                )}
+
+            </Container>
+        </div>
     )
 }
 
